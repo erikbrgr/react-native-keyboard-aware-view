@@ -27,7 +27,7 @@ I believe this callback feature will not be landed in the future Android version
 You can install this component through ``npm``:
 
 ```shell
-npm i react-native-keyboard-aware-view --save
+npm i @erikbrgr/react-native-keyboard-aware-view --save
 ```
 
 ## Usage
@@ -35,7 +35,7 @@ Import ``react-native-keyboard-aware-view`` and wrap your content inside
 it:
 
 ```js
-import { KeyboardAwareView } from 'react-native-keyboard-aware-view'
+import { KeyboardAwareView } from '@erikbrgr/react-native-keyboard-aware-view'
 ```
 
 ### Animated keyboard aware view:
