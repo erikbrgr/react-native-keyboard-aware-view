@@ -1,10 +1,11 @@
 # react-native-keyboard-aware-view
 
-> Note that is is a fork of https://github.com/VansonLeung/react-native-keyboard-aware-view. Because this repo seems dead since 2017, I continued it here.
 
 ![npm (scoped)](https://img.shields.io/npm/v/@erikbrgr/react-native-keyboard-aware-view)
 ![npm](https://img.shields.io/npm/dm/@erikbrgr/react-native-keyboard-aware-view)
 ![npm](https://img.shields.io/npm/dt/@erikbrgr/react-native-keyboard-aware-view)
+
+> Note that is is a fork of https://github.com/VansonLeung/react-native-keyboard-aware-view. Because this repo seems dead since 2017, I continued it here. Contributions welcome!
 
 A simple React Native View component that resizes composite children views inside itself when the keyboard appears. You can implement your own ScrollView, ListView, Multiple Views etc... inside the View and set your own view to 'flex: 1'. 
 
