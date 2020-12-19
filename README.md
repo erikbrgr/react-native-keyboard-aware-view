@@ -1,7 +1,10 @@
 # react-native-keyboard-aware-view
 
-[![npm version](https://badge.fury.io/js/react-native-keyboard-aware-view.svg)](http://badge.fury.io/js/react-native)
-[![NPM](https://nodei.co/npm/react-native-keyboard-aware-view.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-native-keyboard-aware-view/)
+> Note that is is a fork of https://github.com/VansonLeung/react-native-keyboard-aware-view. Because this repo seems dead since 2017, I continued it here.
+
+![npm (scoped)](https://img.shields.io/npm/v/@erikbrgr/react-native-keyboard-aware-view)
+![npm](https://img.shields.io/npm/dm/@erikbrgr/react-native-keyboard-aware-view)
+![npm](https://img.shields.io/npm/dt/@erikbrgr/react-native-keyboard-aware-view)
 
 A simple React Native View component that resizes composite children views inside itself when the keyboard appears. You can implement your own ScrollView, ListView, Multiple Views etc... inside the View and set your own view to 'flex: 1'. 
 
@@ -9,17 +12,16 @@ For the screen below demonstration, the ``<TextInput>`` automatically jumping ac
 
 The problem this plugin aims to solve is to offer easy approach to adjust the view height when keyboard shows / hides. So that you could see the view at the bottom of the screen always sticking above the keyboard. You want to implement a sticky Whatsapp-like message text input box? Set your Chat scrollview to flex: 1, and set your message box view below the scrollview, and then wrap them both inside ``<KeyboardAwareView>``. Here you go. You have implemented a sticky message box view in iOS with no effort at all!
 
-![Demo screen](https://dl.dropboxusercontent.com/u/11386030/out.gif)
-
 ### Note: this view only affects iOS. Although still parsable in Android environment, it is treated as an ordinary ``<View>`` with "flex: 1" bootstrapped.
 
 Tested: it only affects iOS since Android version of React Native lacks support of this callback, by v0.17:
 
-    DeviceEventEmitter.addListener('keyboardWillShow', this.onKeyboardWillShow.bind(this))
-    DeviceEventEmitter.addListener('keyboardWillHide', this.onKeyboardWillHide.bind(this))
+```javascript
+DeviceEventEmitter.addListener('keyboardWillShow', this.onKeyboardWillShow.bind(this))
+DeviceEventEmitter.addListener('keyboardWillHide', this.onKeyboardWillHide.bind(this))
+```
 
 I believe this callback feature will not be landed in the future Android version of React Native. But anyway, Android version has its very own native handling for the keyboards without coding, so this lack is somehow acceptable.
-
 
 ## Installation
 You can install this component through ``npm``:
